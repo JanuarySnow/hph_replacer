@@ -136,7 +136,8 @@ namespace HighPolyHeadUpdateRaces
                     state.PatchMod.Races.Set(race_override);
                 }
             }
-            // Now NPC records for preset defaults.
+            // Now NPC records for preset defaults
+            // by now you can tell ive given up on efficiency and just wanted to get the damn thing working
             foreach(var npc_preset in state.LoadOrder.PriorityOrder.OnlyEnabled().Npc().WinningOverrides())
             {
                 if (npc_preset != null && npc_preset.EditorID != null)
